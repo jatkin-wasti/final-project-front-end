@@ -10,3 +10,4 @@
     2. `Meet the team` - link this to `team.html`
     3. `Jobs List` - link this to `list.html`
     4. `ToolChain` - link this to `toolchain.html`
+    5. `404/Error pages` - link this to `error.html`
