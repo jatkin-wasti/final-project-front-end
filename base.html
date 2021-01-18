@@ -2,30 +2,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
     <title>{% block title %} {% endblock %} </title>
 
     <!--#region StyleSheets and Icons-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap core css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Custom styles for this template -->
-    
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-
-    <link rel="icon" href="static/Sparta_Favicon.jpg" sizes="64x64" type="image/png">
+    <link rel="icon" href="static/Sparta_Favicon.jpg" sizes="64x64">
 
 <style>
-    body {padding-top: 56px;background-color:white; font-family: 'sans-serif';}
-    .aligner{vertical-align:bottom !important}
-    .fa{padding: 0px 18px;transition: transform .2s;}
-    .fa:hover {transform: scale(1.1); }
-    .shadow-card:hover{box-shadow:0 3px 3px rgba(0,0,0,0.14);transition: box-shadow ease-in-out;}
-    .opaque:hover{opacity:0.8;}
+    body{background-color:white; font-family: 'sans-serif';}
+    a:hover{color: #8f8a8a;}
 </style>
+
+{% block header %}
+
+{% endblock %}
 
 </head>
 <body>
@@ -43,18 +41,16 @@
       <div class="navbar-collapse collapse" id="navbarResponsive" style="float:right;">
         <ul class="navbar-nav ml-auto" style="letter-spacing:0.10em;">
           <li class="nav-item">
-            <a class="nav-link" href="/" style="color: white; font-weight:bold">Home
-              <span class="sr-only">(current)</span>
-            </a>
+            <a class="nav-link" href="/" style="color:white; font-weight:bold;">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/meet_team" style="color: white; font-weight: bold">Meet the Team</a>
+            <a class="nav-link" href="/meet_team" style="color:white; font-weight: bold">Meet the Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/data" style="color: white; font-weight: bold">Jobs List</a>
+            <a class="nav-link" href="/data" style="color:white; font-weight: bold">Jobs List</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/data" style="color: white; font-weight: bold">ToolChain</a>
+            <a class="nav-link" href="/data" style="color:white; font-weight: bold">ToolChain</a>
           </li>
         </ul>
       </div>
