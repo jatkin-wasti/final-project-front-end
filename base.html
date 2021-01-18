@@ -17,8 +17,13 @@
     <link rel="icon" href="static/Sparta_Favicon.jpg" sizes="64x64">
 
 <style>
+    p{letter-spacing:0.10em;}
     body{background-color:white; font-family: 'sans-serif';}
     a:hover{color: #8f8a8a;}
+
+    .footer{background-color:#01181b; width:100%; position:fixed; bottom:0; height:5%; align-items:center;}
+    .footer > div#footerinner{margin-right:auto; margin-left:auto; width:50%; text-align:center; color:white; height:100%;}
+    .footer > div#footerinner p{transform: translate(-50%, -50%); position:absolute; top:50%; left:50%;}
 </style>
 
 {% block header %}
@@ -31,7 +36,7 @@
 <!--child template -->
 
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#01181b">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#01181b;">
     <div class="container">
       <a href="https://www.spartaglobal.com/"><img class="masthead-brand" src="static/Sparta-global-logo-white.svg" alt="" width="200" height="80"></a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +44,7 @@
       </button>
 
       <div class="navbar-collapse collapse" id="navbarResponsive" style="float:right;">
-        <ul class="navbar-nav ml-auto" style="letter-spacing:0.10em;">
+        <ul class="navbar-nav ml-auto" style="letter-spacing:0.09em;">
           <li class="nav-item">
             <a class="nav-link" href="/" style="color:white; font-weight:bold;">Home</a>
           </li>
@@ -60,5 +65,10 @@
 
   {% block content %} {% endblock %}
 
+  <footer class="footer">
+    <div id="footerinner">
+      <p>Copyright | Engineering 74</p>
+    </div>
+  </footer>
 </body>
 </html>

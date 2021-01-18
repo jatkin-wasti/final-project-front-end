@@ -3,12 +3,64 @@
 
 <head>
     {% block title %} {% endblock %}
+        <!--#region StyleSheets and Icons-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap core css -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Custom styles for this template -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="icon" href="static/Sparta_Favicon.jpg" sizes="64x64">
+        
+        <style>
+            p{letter-spacing:0.10em;}
+            body{background-color:white; font-family: 'sans-serif';}
+            a:hover{color: #8f8a8a;}
+        
+            .footer{background-color:#01181b; width:100%; position:fixed; bottom:0; height:5%; align-items:center;}
+            .footer > div#footerinner{margin-right:auto; margin-left:auto; width:50%; text-align:center; color:white; height:100%;}
+            .footer > div#footerinner p{transform: translate(-50%, -50%); position:absolute; top:50%; left:50%;}
+    
+            
+        </style>
     {% block header %} {% endblock %}
 
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#01181b;">
+        <div class="container">
+          <a href="https://www.spartaglobal.com/"><img class="masthead-brand" src="static/Sparta-global-logo-white.svg" alt="" width="200" height="80"></a>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="navbar-collapse collapse" id="navbarResponsive" style="float:right;">
+            <ul class="navbar-nav ml-auto" style="letter-spacing:0.09em;">
+              <li class="nav-item">
+                <a class="nav-link" href="/" style="color:white; font-weight:bold;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/meet_team" style="color:white; font-weight: bold">Meet the Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/data" style="color:white; font-weight: bold">Jobs List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/data" style="color:white; font-weight: bold">ToolChain</a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </nav>
     {% block content %} {% endblock %}
+    <footer class="footer">
+        <div id="footerinner">
+          <p>Copyright | Engineering 74</p>
+        </div>
+      </footer>
 </body>
 
 </html>
