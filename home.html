@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    {% block title %} {% endblock %}
+    <!-- {% block title %} {% endblock %} -->
     <!--#region StyleSheets and Icons-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,19 +14,24 @@
     <link rel="icon" href="static/Sparta_Favicon.jpg" sizes="64x64">
     
     <style>
+        @media (max-width: 979px) {
+            body {padding-top: 0px;}
+        }
         p{letter-spacing:0.10em;}
-        body{background-color:white; font-family: 'sans-serif';}
+        body{background-color:white; font-family: 'sans-serif'; padding-top:96px;}
         a:hover{color: #8f8a8a;}
     
         .footer{background-color:#01181b; width:100%; position:fixed; bottom:0; height:5%; align-items:center;}
         .footer > div#footerinner{margin-right:auto; margin-left:auto; width:50%; text-align:center; color:white; height:100%;}
         .footer > div#footerinner p{transform: translate(-50%, -50%); position:absolute; top:50%; left:50%;}
 
-        div#homepageouter{width:}
+        div#homepageouter{width:100%; background-color:rgb(209, 209, 209); text-align:center;}
+        div#homepageouter > div#homepageinner{width:78%; margin-right:auto; margin-left:auto; padding-top:3%;}
+        div#homepageouter > div#homepageinner > div#mainlinks{width:100%; background-color:red; display:flex}
         
     </style>
     
-    {% block header %} {% endblock %}
+    <!-- {% block header %} {% endblock %} -->
     
 </head>
 
@@ -59,9 +64,42 @@
         </div>
       </nav>
 
-    {% block content %} 
-    
-    {% endblock %}
+
+
+    <!-- {% block content %}  -->
+    <div id="homepageouter">
+        <div id="homepageinner">
+            <img src="static/Sparta-global-logo-white.svg" style="width:30%">
+        </div>
+
+        <div id="homepageinner" style="font-size:2em;">
+            <p>Welcome to Engineering 74's Group Project!</p>
+            <p style="font-weight:bold;">End-to-end automation</p>
+            <br>
+            <hr>
+            <p>Main Links</p>
+
+            <div id="mainlinks">
+                <div id="link">
+                    <img src="static/home/git.png">
+                </div>
+                <div id="link">
+                    <img src="static/home/git.png">
+                </div>
+                <div id="link">
+                    <img src="static/home/git.png">
+                </div>
+            </div>
+        </div>
+
+        <div id="homepageinner" style="text-align:left; font-size:1.5em; padding-left:5%;">
+            <p>What is our project about?</p>
+        </div>
+    </div>
+    <!-- {% endblock %} -->
+
+
+
     <footer class="footer">
         <div id="footerinner">
           <p>Copyright | Engineering 74</p>
