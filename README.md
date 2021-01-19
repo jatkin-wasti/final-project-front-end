@@ -4,6 +4,11 @@
 
 <br>
 
+### What does this repo have?
+- This repository contains all the HTML templates used for the Flask app. The files here are pure HTML and Jinja2 inheritance was not used as these are just the pure static webpages.
+
+<br>
+
 ### Notes:
 - There are currently 4 links:
     1. `Home` - link this with `home.html`

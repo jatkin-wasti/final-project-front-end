@@ -2,65 +2,63 @@
 <html>
 
 <head>
-    {% block title %} {% endblock %}
-        <!--#region StyleSheets and Icons-->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Bootstrap core css -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!-- Custom styles for this template -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <link rel="icon" href="static/Sparta_Favicon.jpg" sizes="64x64">
+    <link rel="icon" href="static/Sparta_Favicon.jpg" sizes="64x64">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Error | Sparta Global</title>
+
+    <style>
         
-        <style>
-            p{letter-spacing:0.10em;}
-            body{background-color:white; font-family: 'sans-serif';}
-            a:hover{color: #8f8a8a;}
-        
-            .footer{background-color:#01181b; width:100%; position:fixed; bottom:0; height:5%; align-items:center;}
-            .footer > div#footerinner{margin-right:auto; margin-left:auto; width:50%; text-align:center; color:white; height:100%;}
-            .footer > div#footerinner p{transform: translate(-50%, -50%); position:absolute; top:50%; left:50%;}
-    
-        </style>
-    {% block header %} {% endblock %}
+        p{letter-spacing:0.13em;}
+        a{text-decoration:none; color:rgb(255, 255, 255);}
+        a:hover{color: #c7cf98; text-decoration:none;}
+
+        /* NAVIGATION BAR */
+        div#navigationbar a:hover{color: #a8a8a8; text-decoration:none;}
+        #navigationbar a{text-decoration:none; color:rgb(255, 255, 255);}
+
+        div#navigationbar{width:100%; height:auto; background-color:#01181B; position:fixed; top:0; left:0; right:0; min-width:350px; height:63px; font-size:0.99em;}
+        div#navigationbar > div#left{float:left;}
+
+        div#navigationbar > div#right{position:absolute; bottom:0; right:3%; display:flex;}
+
+        /* PAGE SPECIFIC */
+        #outer{width:100%; background-color:rgb(209,209,209); padding-top:63px; height:calc(94vh);}
+        #error{margin-left:auto; margin-right:auto; text-align:center; padding-top:10%;}
+
+    </style>
 
 </head>
 
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#01181b;">
-        <div class="container">
-          <a href="https://www.spartaglobal.com/"><img class="masthead-brand" src="static/Sparta-global-logo-white.svg" alt="" width="200" height="80"></a>
-          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<body0>
     
-          <div class="navbar-collapse collapse" id="navbarResponsive" style="float:right;">
-            <ul class="navbar-nav ml-auto" style="letter-spacing:0.09em;">
-              <li class="nav-item">
-                <a class="nav-link" href="/" style="color:white; font-weight:bold;">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/meet_team" style="color:white; font-weight: bold">Meet the Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/data" style="color:white; font-weight: bold">Jobs List</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/data" style="color:white; font-weight: bold">ToolChain</a>
-              </li>
-            </ul>
-          </div>
-          
+    <!-- Navigation bar -->
+    <div id="navigationbar" style="color:white;">
+        <div id="left">
+            <a href="https://www.spartaglobal.com/" target="_blank">
+                <img src="static/Sparta-global-logo-white.svg" width=auto height=60px/>
+            </a>
         </div>
-      </nav>
-    {% block content %} {% endblock %}
-    <footer class="footer">
-        <div id="footerinner">
-          <p>Copyright | Engineering 74</p>
+
+        <div id="right">
+            <p style="letter-spacing:0.14em; align-self:flex-end; font-size:0.91em; font-weight:bold;">
+                <a href="/">Home</a>&nbsp;&nbsp;&nbsp; <a href="/team">Team</a>&nbsp;&nbsp;&nbsp; <a href="/list">Jobs List</a>&nbsp;&nbsp;&nbsp; <a href="/toolchain">ToolChain</a>
+            </p>
         </div>
-      </footer>
+    </div>
+    
+    <div id="outer">
+        <div id="error">
+          <h1>404</h1>
+          <h1>Page Not Found</h1>
+          <p>Click <a href="/">here</a> to be redirected to the homepage</p>
+        </div>
+    </div>
+
+    <footer class="py-3" style="background-color: #01181b">
+        <div class="container">
+          <p class="m-0 text-center text-white">Copyright © Engineering 74</p>
+        </div>
+    </footer>
 </body>
 
 </html>
