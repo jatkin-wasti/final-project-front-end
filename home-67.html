@@ -1,6 +1,35 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
+<head>
+  <link rel="icon" href="static/Sparta_Favicon.jpg" sizes="64x64">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Home | Sparta Global</title>
+  <style>
+      body{overflow-y: scroll; font-family:'Verdana', Helvetica, sans-serif;}
+      
+      p{letter-spacing:0.13em;}
+      a{text-decoration:none; color:rgb(4, 0, 255);}
+      a:hover{color: #000000; text-decoration:none;}
+      
+      /* NAVIGATION BAR */
+      div#navigationbar a:hover{color: #a8a8a8; text-decoration:none;}
+      #navigationbar a{text-decoration:none; color:rgb(255, 255, 255);}
+      
+      div#navigationbar{z-index:1; width:100%; height:auto; background-color:#01181B; position:fixed; top:0; left:0; right:0; min-width:350px; height:63px; font-size:0.99em;}
+      div#navigationbar > div#left{float:left;}
+      
+      div#navigationbar > div#right{position:absolute; bottom:0; right:3%; display:flex;}
+      
+      /* HOMEPAGE */
+      div#content{width:70%; margin-right:auto; margin-left:auto; padding-top:63px;}
+      div#homepageinner{width:100%; margin-right:auto; margin-left:auto; padding-top:1%; text-align:center;}
+      div#homepageinner > div#mainlinks{width:50%; display:flex; margin-left:auto; margin-right:auto; justify-content:center;}
+  </style>
+    
+</head>
+
 <head>
     <!--#region StyleSheets and Icons-->
     <meta charset="UTF-8">
